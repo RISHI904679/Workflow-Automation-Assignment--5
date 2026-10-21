@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hostel-outpass-workflow
+
+camunda:
+  client:
+    mode: saas
+    auth:
+      client-id: YOUR_CLIENT_ID
+      client-secret: YOUR_CLIENT_SECRET
+    cloud:
+      cluster-id: YOUR_CLUSTER_ID
+      region: YOUR_CLUSTER_REGION

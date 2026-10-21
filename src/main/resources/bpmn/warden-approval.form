@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 18,
+  "id": "warden-approval-form",
+  "type": "default",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "components": [
+    {
+      "type": "text",
+      "text": "# Warden Approval\n\n**Student:** {{studentName}}  \n**Registration No:** {{regNo}}  \n**Hostel Block:** {{hostelBlock}}  \n**Out Date:** {{outDate}}  \n**Return Date:** {{returnDate}}  \n**Parent Phone:** {{parentPhone}}  \n**Purpose:** {{purpose}}"
+    },
+    {
+      "type": "checkbox",
+      "key": "approved",
+      "label": "Approve this out-pass",
+      "description": "Tick this box to approve the request. Leave unchecked to reject it."
+    },
+    {
+      "type": "textarea",
+      "key": "wardenRemarks",
+      "label": "Warden remarks",
+      "description": "Enter a short reason or instruction for the student.",
+      "validate": {
+        "required": true,
+        "minLength": 3
+      }
+    }
+  ]
+}
